@@ -1,0 +1,76 @@
+:root {
+    --prime-color: #FC3838;
+    --second-color: #38369A;
+    --third-color: #23B5D3;
+    --prime-white: #F7F7FF;
+    --prime-black: #07070A;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+    height: 100%;
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+}
+
+/*
+####################
+    Typography    
+####################
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.character-name {
+    font-size: 2.5rem;
+}
+
+.item-text {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/*
+####################
+    Cells    
+####################
+*/
+
+.cell {
+    display: flex;
+    border: 1px solid var(--prime-color);
+    min-height: 15rem;
+    min-width: 15rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
